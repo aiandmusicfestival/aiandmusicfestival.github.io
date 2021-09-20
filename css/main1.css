@@ -6,12 +6,18 @@
     color: #E1CDBB;
 }
 
+.titol {
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 45px;
+}
+
 .aspecte {
     font-size: 35px; !important;
     font-family: monospace;
     font-weight: bold;
     text-decoration: underline;
-    text-underline-offset: auto;
     text-underline-offset: 0.3em;
 }
 
@@ -26,12 +32,29 @@ body {
 }
 
 .img-responsive {
-    width: 100%;
+    width: 80%;
+    margin:auto;
 }
 
-.img {
-    width: 100%;
-    height: auto;
+@media screen and (max-width: 991px) {
+    /* start of large tablet styles */
+    .orgnanizers {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+    .orgnanizers {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    /* start of phone styles */
+    .orgnanizers {
+        width: 100%;
+    }
 }
 
 /* BANNER */
@@ -47,7 +70,7 @@ body {
 
 .rowNav {
     padding: 0; !important;
-    margin: 0 0% 0 0%;
+    margin: 0;
 }
 
 .hack {
@@ -66,6 +89,7 @@ body {
     padding: 20px;
     font-family: monospace;
     font-size: 20px;
+    width: 70%;
 }
 
 .blockLink{
@@ -74,7 +98,7 @@ body {
     background-color: #8D4130;
     color: #E1CDBB;
     padding: 10px;
-    margin: 0 0% 0 0%;
+    margin: 0;
     border: 20px solid #8D4130;
     border-radius: 20px;
     opacity: 0.9;
@@ -86,7 +110,7 @@ body {
 }
 .everis {
     width: 100%;
-    margin: 0 0% 0 0%;
+    margin: 0;
 }
 
 .centrat {
@@ -222,10 +246,4 @@ header .navbar-default ul.navbar-nav li a:hover:after {
 
 .rounded-social-buttons .social-button.instagram {
     background: black;
-}
-
-.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
-    color: #125688;
-    background: #fefefe;
-    border-color: #125688;
 }
