@@ -1,0 +1,315 @@
+@import 'dispositius-responsive.css';
+
+a:hover {
+    color:#E1CDBB;
+}
+
+.collapse{
+    width:100%;
+}
+
+ul.plistings {
+    display: block;
+}
+
+.p_listings > li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-size: 15px !important;
+}
+
+.p_listings > li:first-word {
+    padding-left: 10px
+}
+
+.p_listings > li::before {
+    position: absolute;
+    content:'>>';
+    margin-top: -7px;
+    font-size: 25px;
+    padding-right: 10px;
+    vertical-align: center !important;
+    top: 0;
+    left: -15px;
+    color: white; /* pulilang ug unsa color diri */
+}
+
+.redred {
+    color: #8D4130;
+}
+
+.carn {
+    color: #E1CDBB;
+}
+
+.titol {
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.aspecte {
+    font-size: 35px; !important;
+    font-family: monospace;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+}
+
+html {
+    font-size:100%;
+    font-family: monospace;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.img-responsive {
+    width: 80%;
+    margin:auto;
+}
+
+@media screen and (max-width: 991px) {
+    /* start of large tablet styles */
+    .img-responsive {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /* start of large tablet styles */
+    .img-responsive {
+        width: 200%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    /* start of large tablet styles */
+    .img-responsive {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 420px) {
+    /* start of large tablet styles */
+    .img-responsive {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+    .resp {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    /* start of phone styles */
+    .resp {
+        width: 600%;
+    }
+}
+
+/* BANNER */
+
+.banner{
+    width: 100%;
+    height: auto;
+}
+
+.rowBanner{
+    padding: 0 !important;
+}
+
+.rowNav {
+    padding: 0; !important;
+    margin: 0;
+}
+
+.hack {
+    border: 7px solid #8D4130;
+    border-radius: 10px;
+    margin: 0 5% 0 5%;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.orgnanizers {
+    border: 20px solid black;
+    border-radius: 30px;
+    margin: 0 5% 0 5%;
+    padding: 20px;
+    font-family: monospace;
+    font-size: 20px;
+    width: 70%;
+}
+
+.blockLink{
+    width: 100%;
+    height: auto;
+    background-color: #8D4130;
+    color: #E1CDBB;
+    padding: 10px;
+    margin: 0;
+    border: 20px solid #8D4130;
+    border-radius: 20px;
+    opacity: 0.9;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+    font-family: monospace;
+    font-size: 30px;
+}
+.everis {
+    width: 100%;
+    margin: 0;
+}
+
+.centrat {
+    margin: auto auto auto auto;
+    width: 100%;
+}
+
+.blockLink:hover{
+    background-color: #8D4130;
+    opacity: 1;
+    border-color: #8D4130;
+    color: #E1CDBB !important;
+}
+
+/* BARRA DE NAVEGACIÓ DE DALT */
+
+.navbar-custom {
+    background-color: black !important;
+    font-family: monospace;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    height: 2px !important;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: #E1CDBB;
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: #E1CDBB;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link,
+.dropdown-item.active {
+    color: #8D4130;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    background-color: black;
+    color: #E1CDBB;
+    font-family: monospace;
+}
+
+.dropdown-menu a, .dropdown-item a.active .dropdown-item:focus {
+    background-color: black !important;
+    color: #E1CDBB;
+}
+
+header .navbar-default ul.navbar-nav li a:hover:after {
+    background-color: black !important;
+}
+
+.dropdown-item:hover{
+    background-color: black; !important;
+    color: #8D4130; !important;
+}
+
+.rounded-social-buttons {
+    text-align: center;
+}
+
+.rounded-social-buttons .social-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 3.125rem;
+    height: 3.125rem;
+    border: 0.125rem solid transparent;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    color: #fefefe;
+    font-size: 1.5625rem;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 1.6875rem;
+    transition: all 0.5s ease;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
+    font-size: 25px;
+}
+
+.rounded-social-buttons .social-button.facebook {
+    background: black;
+}
+
+.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+    color: #3b5998;
+    background: white;
+    border-color: #3b5998;
+}
+
+.rounded-social-buttons .social-button.twitter {
+    background: black;
+}
+
+.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+    color: #55acee;
+    background: #fefefe;
+    border-color: #55acee;
+}
+
+.rounded-social-buttons .social-button.linkedin {
+    background: black;
+}
+
+.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+    color: #007bb5;
+    background: #fefefe;
+    border-color: #007bb5;
+}
+
+.rounded-social-buttons .social-button.youtube {
+    background: black;
+}
+
+.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
+    color: #bb0000;
+    background: #fefefe;
+    border-color: #bb0000;
+}
+
+.rounded-social-buttons .social-button.instagram {
+    background: black;
+}
+
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+    color: #125688;
+    background: #fefefe;
+    border-color: #125688;
+}
